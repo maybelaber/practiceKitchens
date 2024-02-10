@@ -1,4 +1,5 @@
 /* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -85,4 +86,162 @@ label {
 
 legend {
   display: block;
+}
+
+body {
+  background-color: #FCFCFC;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: #333;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+a:hover {
+  color: #99CB38;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  /* Contain text within 1px box */
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  /* Keep the layout */
+  position: absolute;
+  /* Remove any visible trace (e.g. background color) */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%); /* browsers in the future */
+  /* Prevent the screen reader to skip spaces between words */
+  white-space: nowrap;
+}
+
+.title-2 {
+  color: #99CB38;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.header {
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header__contacts {
+  padding: 17px 0;
+  background: #FBD846;
+}
+
+.header__contacts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__address {
+  font-size: 14px;
+}
+.header__address::before {
+  content: "";
+  padding: 0 18px 0 0;
+  background: url("./../img/icons/map.svg") left center no-repeat;
+}
+
+.header__tel {
+  font-weight: 600;
+}
+.header__tel::before {
+  content: "";
+  padding: 10px 33px 10px 0;
+  background: url("./../img/icons/tel.svg") left center no-repeat;
+}
+
+.header__row {
+  padding: 18px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo img {
+  width: 165px;
+  height: 68px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 22px;
+     -moz-column-gap: 22px;
+          column-gap: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav__item--accent a {
+  padding: 15px 26px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  border: 1px solid #FBD846;
+  border-radius: 30px;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(255, 216, 111, 0.4);
+          box-shadow: 2px 2px 4px 0px rgba(255, 216, 111, 0.4);
+}
+.nav__item--accent a:hover {
+  background-color: #FBD846;
+  color: #000;
 }
