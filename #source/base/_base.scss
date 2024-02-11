@@ -54,13 +54,17 @@ a {
 	white-space: nowrap;
 }
 
-.title-2 {
-    color: $accent;
-    
-    font-size: 36px;
-    font-weight: 700;
-}
-
 .no-scroll {
     overflow-y: hidden;
+}
+
+.title-2 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.regular-text {
+    font-weight: 400;
 }
