@@ -1,0 +1,76 @@
+.card {
+    display: inline-block;
+
+    background: $white;
+
+    position: relative;
+
+    outline: 2px solid transparent;
+    transition: outline 0.2s ease-in;
+}
+
+.card:hover {
+    outline: 2px solid $accent;
+
+    .card__btn {
+        background-color: $accent;
+        background-image: linear-gradient($white, $white),    
+            linear-gradient($white, $white), 
+            none;
+    }
+
+    .card__title {
+        color: $accent;
+    }
+}
+
+.card__desc {
+    padding: 25px;
+}
+
+.card__title {
+    font-weight: 600;
+    line-height: 20px;
+
+    margin: 0 0 22px 0;
+
+    color: $dark;
+    transition: color 0.2s ease-in;
+}
+
+.card__old-price {
+    color: $gray;
+    font-weight: 600;
+
+    margin: 0 0 6px 0;
+}
+
+.card__price {
+    font-size: 25px;
+    font-weight: 600;
+    color: $accent;
+}
+
+.card__btn {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #f4f4f4;
+    background-image: linear-gradient($accent, $accent),    
+        linear-gradient($accent, $accent), 
+        none;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 50% 2px,2px 50%;
+    background-attachment: scroll, scroll, scroll;
+    background-origin: padding-box, padding-box, padding-box;
+    background-clip: border-box, border-box, border-box;
+    border-radius: 50%;
+
+    transition: background-color 0.2s ease-in, 
+        background-image 0.2s ease-in;
+}
