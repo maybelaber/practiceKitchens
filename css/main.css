@@ -162,6 +162,10 @@ a:hover {
   font-weight: 400;
 }
 
+.yellow-text {
+  color: #FBD846;
+}
+
 .header {
   background-color: #FFF;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -278,9 +282,6 @@ a:hover {
   font-size: 35px;
   font-weight: 900;
   line-height: 43px;
-}
-.price__title--accent {
-  color: #FBD846;
 }
 
 .price__text {
@@ -463,4 +464,185 @@ a:hover {
   border-radius: 50%;
   -webkit-transition: background-color 0.2s ease-in, background-image 0.2s ease-in;
   transition: background-color 0.2s ease-in, background-image 0.2s ease-in;
+}
+
+.kitchen-styles {
+  padding: 69px 0 94px;
+}
+
+.kitchen-styles__title {
+  margin: 0 0 26px 0;
+}
+
+.kitchen-styles__text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 0 58px 0;
+}
+
+.kitchen-styles__gallery {
+  margin: 0 0 63px 0;
+}
+
+.kitchen-styles__cta {
+  padding: 38px 0 20px 26px;
+  border-radius: 30px;
+  background: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 13px;
+     -moz-column-gap: 13px;
+          column-gap: 13px;
+}
+
+.kitchen-styles__cta-wrapper {
+  width: 67.15%;
+}
+
+.kitchen-styles__cta-title {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
+.kitchen-styles__cta-text {
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0 0 39px 0;
+}
+
+.kichen-styles__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 21px;
+     -moz-column-gap: 21px;
+          column-gap: 21px;
+  row-gap: 28px;
+}
+
+.kichen-styles__input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 21px;
+     -moz-column-gap: 21px;
+          column-gap: 21px;
+  margin: 0 0 28px 0;
+}
+
+.kitchen-styles__input {
+  padding: 20px 15px;
+  border: 1px solid #B0B0B0;
+  border-radius: 30px;
+}
+.kitchen-styles__input::-webkit-input-placeholder {
+  color: #B0B0B0;
+  font-size: 20px;
+}
+.kitchen-styles__input::-moz-placeholder {
+  color: #B0B0B0;
+  font-size: 20px;
+}
+.kitchen-styles__input:-ms-input-placeholder {
+  color: #B0B0B0;
+  font-size: 20px;
+}
+.kitchen-styles__input::-ms-input-placeholder {
+  color: #B0B0B0;
+  font-size: 20px;
+}
+.kitchen-styles__input::placeholder {
+  color: #B0B0B0;
+  font-size: 20px;
+}
+
+.kichen-styles__file-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 22px;
+     -moz-column-gap: 22px;
+          column-gap: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kitchen-styles__file {
+  display: none;
+}
+
+.kichen-styles__file-text {
+  color: #737373;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.kitchen-styles__btn {
+  padding: 20px 59px;
+  max-width: 360px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+          box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+  background: linear-gradient(268.28deg, #FBD846 0.032%, #FFE888 99.95%);
+  margin: 0 0 10px 0;
+}
+
+.kichen-styles__btn-text {
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.tabs-triggers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 45px 0;
+}
+
+.tabs-triggers__item {
+  padding: 15px 35px;
+  font-weight: 400;
+  color: #8C8C8C;
+  border-radius: 30px;
+  background: #F5F5F5;
+}
+.tabs-triggers__item--active {
+  background: #FBD846;
+  color: #333;
+  font-weight: 600;
+}
+
+.tabs-content__item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 30px;
+}
+
+.tabs-content__card {
+  display: inline-block;
+  position: relative;
+}
+
+.tab-conntent__btn {
+  padding: 14.5px;
+  position: absolute;
+  bottom: 13px;
+  right: 9px;
+  background: rgba(251, 216, 70, 0.8);
+  border-radius: 50%;
 }

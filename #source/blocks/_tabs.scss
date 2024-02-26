@@ -1,0 +1,51 @@
+// .tabs {
+// }
+
+.tabs-triggers {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 0 45px 0;
+}
+
+.tabs-triggers__item {
+    padding: 15px 35px;
+
+    font-weight: 400;
+    color: $tabs-triggers-text;
+
+    border-radius: 30px;
+    background: $light-gray;
+
+    &--active {
+        background: $yellow-accent;
+        
+        color: $dark;
+        font-weight: 600;
+    }
+}
+
+// .tabs-content {   
+// }
+
+.tabs-content__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+}
+
+.tabs-content__card {
+    display: inline-block;
+    position: relative;
+}
+
+.tab-conntent__btn {
+    padding: 14.5px;
+
+    position: absolute;
+    bottom: 13px;
+    right: 9px;
+
+    background: rgba(251, 216, 70, 0.8);
+    border-radius: 50%;
+}
