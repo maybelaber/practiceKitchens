@@ -1,0 +1,50 @@
+.our-works {
+    padding: 35px 0 42px;
+
+    background: $yellow-accent;
+}
+
+.our-works__title {
+    margin: 0 0 56px 0;
+}
+
+.our-works__galery {
+    position: relative;
+}
+
+.our-works__prev-btn, 
+.our-works__next-btn {
+    position: absolute;
+}
+
+.our-works__prev-btn {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.our-works__next-btn {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.our-works__carousel {
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.our-works__carousel-track {
+    display: flex;
+
+    column-gap: 30px;
+}
+
+.our-works__img {
+    width: 360px;
+    height: 360px;
+
+    object-fit: cover;
+    object-position: center;
+}

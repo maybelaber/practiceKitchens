@@ -170,6 +170,10 @@ a:hover {
   color: #99CB38;
 }
 
+.white-text {
+  color: #FFF;
+}
+
 .header {
   background-color: #FFF;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -946,4 +950,60 @@ a:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
+}
+
+.our-works {
+  padding: 35px 0 42px;
+  background: #FBD846;
+}
+
+.our-works__title {
+  margin: 0 0 56px 0;
+}
+
+.our-works__galery {
+  position: relative;
+}
+
+.our-works__prev-btn,
+.our-works__next-btn {
+  position: absolute;
+}
+
+.our-works__prev-btn {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.our-works__next-btn {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.our-works__carousel {
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.our-works__carousel-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.our-works__img {
+  width: 360px;
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
