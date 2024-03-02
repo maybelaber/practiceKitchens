@@ -1007,3 +1007,127 @@ a:hover {
   -o-object-position: center;
      object-position: center;
 }
+
+.consultation {
+  padding: 30px 0;
+  background: #262626;
+}
+
+.consultation__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.consultation__wrapper {
+  -webkit-box-flex: 65%;
+      -ms-flex: 65% 1 0px;
+          flex: 65% 1 0;
+  padding: 0 21px 0 0;
+}
+
+.consultation__title {
+  color: #FFF;
+  margin: 0 0 30px 0;
+}
+
+.consultation__img {
+  padding: 0 0 0 21px;
+  margin: 0 -148px 0 0;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "form-name form-tel" "form-textarea form-textarea" "form-btn form-text";
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__input {
+  padding: 16px 21px;
+  grid-area: form-input;
+}
+.form__input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+.form__input::-moz-placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+.form__input:-ms-input-placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+.form__input::-ms-input-placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+.form__input::placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+
+.form__name {
+  grid-area: form-name;
+}
+
+.form__tel {
+  grid-area: form-tel;
+}
+
+.form__input,
+.form__textarea {
+  padding: 16px 21px;
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 20px;
+}
+.form__input::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+.form__input::-moz-placeholder, .form__textarea::-moz-placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+.form__input:-ms-input-placeholder, .form__textarea:-ms-input-placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+.form__input::-ms-input-placeholder, .form__textarea::-ms-input-placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  font-size: 20px;
+  color: #B0B0B0;
+}
+
+.form__textarea {
+  grid-area: form-textarea;
+  height: 113px;
+}
+
+.form__btn {
+  padding: 17px 20px;
+  grid-area: form-btn;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+          box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+  background: linear-gradient(268.28deg, #FBD846 0.032%, #FFE888 99.95%);
+}
+
+.form__text {
+  color: #B0B0B0;
+  font-size: 12px;
+  grid-area: form-text;
+}

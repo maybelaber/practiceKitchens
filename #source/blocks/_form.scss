@@ -1,0 +1,72 @@
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "form-name form-tel"
+        "form-textarea form-textarea"
+        "form-btn form-text";
+    gap: 30px;
+    align-items: center;
+}
+
+.form__input {
+    padding: 16px 21px;
+
+    grid-area: form-input;
+
+    &::placeholder {
+        font-size: 20px;
+        color: $cta-input;
+    }
+}
+
+.form__name {
+    grid-area: form-name;
+}
+
+.form__tel {
+    grid-area: form-tel;
+}
+
+.form__input, 
+.form__textarea {
+    padding: 16px 21px;
+
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 20px;
+
+    &::placeholder {
+        font-size: 20px;
+        color: $cta-input;
+    }
+}
+
+.form__textarea {
+    grid-area: form-textarea;
+
+    height: 113px;
+}
+
+.form__btn {
+    padding: 17px 20px;
+
+    grid-area: form-btn;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    border-radius: 30px;
+    box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+    background: 
+        linear-gradient(268.28deg, 
+        $yellow-accent 0.032%, 
+        $yellow-muted 99.95%
+        );
+}
+
+.form__text {
+    color: $cta-input;
+    font-size: 12px;
+
+    grid-area: form-text;
+}
