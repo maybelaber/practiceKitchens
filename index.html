@@ -49,17 +49,32 @@
                                 <li class="nav__item">
                                     <a href="#!">Контакты</a>
                                 </li>
+                                <li class="header__tel header__tel--mob-nav">
+                                    <a href="73466681598">+7 (3466) 68-15-98</a>
+                                </li>
                                 <li class="nav__item nav__item--accent">
                                     <a href="#!">Заказать звонок</a>
                                 </li>
+                                <li class="header__address header__address--mob-nav">
+                                    г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик № 20а
+                                </li>
                             </ul>
                         </nav>
+                    </div>
+
+                    <div class="header__mob">
+                        <a href="tel:73466681598" class="header__tel">+7 (3466) 68-15-98</a>
+                        <div class="header__nav-btn">
+                            <button class="nav-icon-btn">
+                                <div class="nav-icon"></div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <main class="main">
+        <main class="main none">
             <section class="price">
                 <div class="container">
                     <div class="price__row">
@@ -448,12 +463,15 @@
                                 <img src="./img/materials/card-02.png" alt="" class="materials__card-img">
                                 <p class="materials__card-title">Мдф</p>
                                 <div class="materials__card-text">
-                                    <p>- Широкие дизайнерские возможности. Чаще всего МДФ используют как основу, отделывая
-                                        пластиком, акрилом, различными типами пленок. Это позволяет создать яркие уникальные
+                                    <p>- Широкие дизайнерские возможности. Чаще всего МДФ используют как основу,
+                                        отделывая
+                                        пластиком, акрилом, различными типами пленок. Это позволяет создать яркие
+                                        уникальные
                                         дизайны. Часто гарнитуры из МДФ имитируют натуральное дерево, камень, металл и
                                         другие материалы.</p>
                                     <p>- Качественная мебель из МДФ может служить до 20 лет без потери свойств.</p>
-                                    <p>- МФД не капризен и не требует специальных моющих средств. Правда, необходимо учесть,
+                                    <p>- МФД не капризен и не требует специальных моющих средств. Правда, необходимо
+                                        учесть,
                                         что покрытие может оказаться более требовательным.</p>
                                 </div>
                             </div>
@@ -543,16 +561,16 @@
                         <button class="our-works__prev-btn">
                             <img src="./img/icons/prev.svg" alt="">
                         </button>
-                            <div class="our-works__carousel">
-                                <div class="our-works__carousel-track">
-                                    <img src="./img/our-works/01.png" alt="" class="our-works__img">
-                                    <img src="./img/our-works/02.png" alt="" class="our-works__img">
-                                    <img src="./img/our-works/03.png" alt="" class="our-works__img">
-                                    <img src="./img/our-works/04.jpg" alt="" class="our-works__img">
-                                    <img src="./img/our-works/05.jpg" alt="" class="our-works__img">
-                                    <img src="./img/our-works/06.jpg" alt="" class="our-works__img">
-                                </div>
+                        <div class="our-works__carousel">
+                            <div class="our-works__carousel-track">
+                                <img src="./img/our-works/01.png" alt="" class="our-works__img">
+                                <img src="./img/our-works/02.png" alt="" class="our-works__img">
+                                <img src="./img/our-works/03.png" alt="" class="our-works__img">
+                                <img src="./img/our-works/04.jpg" alt="" class="our-works__img">
+                                <img src="./img/our-works/05.jpg" alt="" class="our-works__img">
+                                <img src="./img/our-works/06.jpg" alt="" class="our-works__img">
                             </div>
+                        </div>
                         <button class="our-works__next-btn">
                             <img src="./img/icons/next.svg" alt="">
                         </button>
@@ -565,18 +583,21 @@
                 <div class="container">
                     <div class="consultation__row">
                         <div class="consultation__wrapper">
-                            <h2 class="consultation__title title-2"><span class="green-text">Проконсультируем</span> по любым вопросам</h2>
+                            <h2 class="consultation__title title-2"><span class="green-text">Проконсультируем</span> по
+                                любым вопросам</h2>
 
                             <form action="" class="form">
                                 <input placeholder="Ваше имя" type="text" class="form__input form__name">
 
                                 <input placeholder="+7(_ _ _) _ _ _-_ _ - _ _" type="tel" class="form__input form__tel">
 
-                                <textarea placeholder="Кратко опишите Ваш вопрос" name="form-textarea" id="form-textarea" cols="30" rows="10" class="form__textarea"></textarea>
+                                <textarea placeholder="Кратко опишите Ваш вопрос" name="form-textarea"
+                                    id="form-textarea" cols="30" rows="10" class="form__textarea"></textarea>
 
                                 <button class="form__btn">Получить консультацию</button>
 
-                                <p class="form__text">Нажимая кнопку "Получить консультацию" вы даете согласие на обработку персональных данных в соответствии с политикой конфиденциальности</p>
+                                <p class="form__text">Нажимая кнопку "Получить консультацию" вы даете согласие на
+                                    обработку персональных данных в соответствии с политикой конфиденциальности</p>
                             </form>
                         </div>
 
@@ -588,7 +609,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer class="footer none">
             <div class="container">
                 <div class="footer__row">
                     <div class="footer__column">
@@ -651,6 +672,8 @@
                 </div>
             </div>
         </footer>
+
+        <script src="./js/main.js"></script>
     </div>
 </body>
 
