@@ -1131,3 +1131,99 @@ a:hover {
   font-size: 12px;
   grid-area: form-text;
 }
+
+.footer {
+  padding: 23px 0;
+  background-color: #333;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+}
+
+.footer__logo {
+  margin: 0 0 32px 0;
+}
+
+.footer__address {
+  color: #FFF;
+  line-height: 20px;
+}
+
+.footer__title {
+  color: #818181;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 24px 0;
+}
+
+.footer__contacts-list {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+}
+
+.footer__list-item:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+.footer__list-item--email, .footer__list-item--tel, .footer__list-item--vk, .footer__list-item--ok {
+  padding: 0 0 0 30px;
+  position: relative;
+}
+.footer__list-item--email::before, .footer__list-item--tel::before, .footer__list-item--vk::before, .footer__list-item--ok::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  margin: auto;
+}
+.footer__list-item--email::before {
+  background: url("./../img/icons/email.svg") no-repeat;
+  width: 22px;
+  height: 16px;
+}
+.footer__list-item--tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+}
+.footer__list-item--tel::before {
+  background: url("./../img/icons/phone.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  -webkit-transform: unset;
+          transform: unset;
+}
+.footer__list-item--vk::before {
+  background: url("./../img/icons/vk.svg") no-repeat;
+  width: 21px;
+  height: 12px;
+}
+.footer__list-item--ok::before {
+  background: url("./../img/icons/ok.svg") no-repeat;
+  width: 13px;
+  height: 23px;
+}
+
+.footer__list-item a {
+  color: #FFF;
+}

@@ -1,0 +1,100 @@
+.footer {
+    padding: 23px 0;
+
+    background-color: $dark;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+}
+
+.footer__logo {
+    margin: 0 0 32px 0;
+}
+
+.footer__address {
+    color: $white;
+
+    line-height: 20px;
+}
+
+.footer__title {
+    color: $footer-titles;
+    font-size: 20px;
+    font-weight: 600;
+
+    margin: 0 0 24px 0;
+}
+
+.footer__contacts-list {
+    column-count: 2;
+    column-gap: 100px
+}
+
+.footer__list-item {
+    &:not(:last-child) {
+        margin: 0 0 30px 0;
+    }
+
+    &--email, 
+    &--tel, 
+    &--vk, 
+    &--ok {
+        padding: 0 0 0 30px;
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+
+            margin: auto;
+        }
+    }
+
+    &--email::before {
+        background: url('./../img/icons/email.svg') no-repeat;
+        
+        width: 22px;
+        height: 16px;
+    }
+
+    &--tel {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &--tel::before {
+        background: url('./../img/icons/phone.svg') no-repeat;
+
+        width: 25px;
+        height: 25px;
+
+        top: 0;
+        transform: unset;
+    }
+
+    &--vk::before {
+        background: url('./../img/icons/vk.svg') no-repeat;
+
+        width: 21px;
+        height: 12px;
+    }
+
+    &--ok::before {
+        background: url('./../img/icons/ok.svg') no-repeat;
+
+        width: 13px;
+        height: 23px;
+    }
+}
+
+.footer__list-item a {
+    color: $white;
+}
