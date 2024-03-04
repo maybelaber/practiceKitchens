@@ -1,4 +1,10 @@
 // Media
+@mixin mediaBigTablet() {
+    @media screen and (max-width: $big-tablet) {
+        @content;
+    }
+}
+
 @mixin mediaTablet() {
     @media screen and (max-width: $tablet) {
         @content;

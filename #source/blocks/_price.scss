@@ -6,16 +6,27 @@
     display: flex;
     column-gap: 30px;
     align-items: center;
+    justify-content: center;
 }
 
 .price__content {
     max-width: 646px;
+    @include mediaBigTablet {
+        max-width: 900px;
+    }
 }
 
 .price__title {
     font-size: 35px;
     font-weight: 900;
     line-height: 43px;
+
+    @include mediaBigTablet {
+        font-size: 28px;
+        line-height: 34px;
+
+        margin: 0 0 24px 0;
+    }
 }
 
 .price__text {
@@ -23,6 +34,10 @@
     line-height: 22px;
 
     margin: 0 0 64px 0;
+
+    @include mediaMobile {
+        margin: 0 0 30px 0;
+    }
 }
 
 .price__benefits {
@@ -31,9 +46,13 @@
     column-gap: 29px;
 
     grid-template-columns: repeat(2, 1fr);
-    //grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 
     margin: 0 0 38px 0;
+
+    @include mediaMobile {
+        row-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
 }
 
 .price__item {
@@ -41,6 +60,9 @@
     column-gap: 11px;
     align-items: center;
     
+    @include mediaMobile {
+        align-items: flex-start;
+    }
 }
 
 .price__item-img img {
@@ -51,15 +73,25 @@
 .price__item-text {
     font-weight: 500;
     line-height: 20px;
+
+    @include mediaMobile {
+        font-size: 14px;
+    }
 }
 .price__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     column-gap: 30px;
+
+    @include mediaMobile {
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
 
 .price__btn {
-    padding: 12px 120px;
+    padding: 15px 52px;
 
     font-size: 20px;
     font-weight: 700;
@@ -69,6 +101,23 @@
 
     box-shadow: 10px 10px 20px 0px rgba(255, 216, 111, 0.4);
     background: linear-gradient(268.28deg, $yellow-accent 0.036%, $yellow-muted 99.944%);
+
+    @include mediaMobile {
+        padding: 15px 20px;
+        width: 100%;
+
+        font-size: 16px;
+    }
+}
+
+.price__gift {
+    @include mediaBigTablet {
+        padding: 0 15% 0 0;
+    }
+    
+    @include mediaTablet {
+        padding: 0;
+    }
 }
 
 .price__gift-img {
@@ -84,6 +133,10 @@
 
 .price__img {
     height: 682px;
+
+    @include mediaBigTablet {
+        display: none;
+    }
 }
 
 .price__img img {
