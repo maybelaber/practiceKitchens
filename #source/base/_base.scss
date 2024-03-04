@@ -64,6 +64,11 @@ a {
     line-height: 34px;
     text-transform: uppercase;
     text-align: center;
+
+    @include mediaTablet {
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 
 .regular-text {
