@@ -1,5 +1,9 @@
 .price {
     padding: 0 0 30px 0;
+
+    @include mediaBigTablet {
+        padding: 30px 0;
+    }
 }
 
 .price__row {

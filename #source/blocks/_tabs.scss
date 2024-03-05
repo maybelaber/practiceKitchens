@@ -3,9 +3,17 @@
 
 .tabs-triggers {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    flex-wrap: wrap; // temporary
+    justify-content: center; //
+    column-gap: 10px; //
+    row-gap: 10px; //
 
     margin: 0 0 45px 0;
+
+    @include mediaTablet {
+        margin: 0 0 20px 0;
+    }
 }
 
 .tabs-triggers__item {
@@ -37,6 +45,11 @@
 .tabs-content__card {
     display: inline-block;
     position: relative;
+}
+
+.tabs-content__img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .tab-conntent__btn {
