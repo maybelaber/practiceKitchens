@@ -1397,18 +1397,33 @@ a:hover {
 .materials {
   padding: 94px 0 116px;
 }
+@media screen and (max-width: 1137px) {
+  .materials {
+    padding: 30px 0;
+  }
+}
 
 .materials__title {
   margin: 0 0 63px 0;
 }
+@media screen and (max-width: 1137px) {
+  .materials__title {
+    margin: 0 0 30px 0;
+  }
+}
 
 .materials__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 1137px) {
+  .materials__grid {
+    gap: 20px;
+  }
 }
 
 .materials__card {
@@ -1454,9 +1469,20 @@ a:hover {
   color: #333;
   margin: 0 0 21px 0;
 }
+@media screen and (max-width: 730px) {
+  .materials__card-title {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+}
 
 .materials__card-img {
   float: right;
+}
+@media screen and (max-width: 730px) {
+  .materials__card-img {
+    max-width: 100px;
+  }
 }
 
 .materials__card-text {
@@ -1476,6 +1502,7 @@ a:hover {
   padding: 10px 62px;
   display: inline-block;
   font-weight: 700;
+  text-align: center;
   border-radius: 30px;
   outline: 2px solid transparent;
   -webkit-transition: all 0.2s ease-in;
@@ -1498,6 +1525,11 @@ a:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
+}
+@media screen and (max-width: 730px) {
+  .materials__card-btn {
+    font-size: 14px;
+  }
 }
 
 .our-works {
