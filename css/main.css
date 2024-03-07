@@ -148,6 +148,7 @@ a:hover {
 
 .no-scroll {
   overflow-y: hidden;
+  position: fixed;
 }
 
 .title-2 {
@@ -265,10 +266,12 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: #FFF;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  text-align: center;
 }
 .header__row--mobile .header__nav {
   display: block;
@@ -282,10 +285,11 @@ a:hover {
   padding: 15px 0 0 0;
   font-size: 22px;
   font-weight: 600;
+  width: 100%;
 }
 .header__row--mobile .header__tel--mob-nav::before {
   background: url("./../img/icons/tel-mob.svg") left center/23px 23px no-repeat;
-  padding: 0 32px 0 0;
+  padding: 0 30px 0 0;
 }
 .header__row--mobile .nav__list {
   -webkit-box-orient: vertical;
