@@ -7,7 +7,30 @@
 .footer__row {
     display: flex;
     justify-content: space-between;
-    column-gap: 25px;
+    column-gap: 30px;
+    row-gap: 40px;
+
+    @include mediaTablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mediaMobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer__main-info {
+    grid-column: 1 / 3;
+}
+
+.footer__sections {
+    grid-row: 2;
+}
+
+.footer__contacts {
+    grid-row: 2;
 }
 
 .footer__logo {
@@ -15,9 +38,17 @@
 }
 
 .footer__address {
+    max-width: 242px;
+
     color: $white;
 
     line-height: 20px;
+
+    @include mediaTablet {
+        font-size: 14px;
+
+        max-width: unset;
+    }
 }
 
 .footer__title {
@@ -26,16 +57,32 @@
     font-weight: 600;
 
     margin: 0 0 24px 0;
+
+    @include mediaTablet {
+        font-size: 18px;
+
+        margin: 0 0 14px 0;
+    }
 }
 
 .footer__contacts-list {
     column-count: 2;
-    column-gap: 100px
+    column-gap: 100px;
+
+    @include mediaBigTablet {
+        column-count: 1;
+    }
 }
 
 .footer__list-item {
+    break-inside: avoid-column;
+
     &:not(:last-child) {
         margin: 0 0 30px 0;
+
+        @include mediaTablet {
+            margin: 0 0 20px 0;
+        }
     }
 
     &--email, 
@@ -68,6 +115,10 @@
         display: flex;
         flex-direction: column;
         row-gap: 30px;
+
+        @include mediaTablet {
+            row-gap: 20px;
+        }
     }
 
     &--tel::before {
@@ -97,4 +148,8 @@
 
 .footer__list-item a {
     color: $white;
+
+    @include mediaTablet {
+        font-size: 14px;
+    }
 }
