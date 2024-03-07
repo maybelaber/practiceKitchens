@@ -258,7 +258,7 @@ a:hover {
 }
 
 .header__row--mobile {
-  padding: 157px 0 0 0;
+  padding: 120px 0 0 0;
   position: fixed;
   z-index: 3;
   top: 0;
@@ -279,8 +279,8 @@ a:hover {
 }
 .header__row--mobile .header__tel--mob-nav {
   display: block;
-  padding: 35px 0 0 0;
-  font-size: 24px;
+  padding: 15px 0 0 0;
+  font-size: 22px;
   font-weight: 600;
 }
 .header__row--mobile .header__tel--mob-nav::before {
@@ -298,11 +298,21 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 28px;
+  row-gap: 20px;
   width: 100%;
 }
 .header__row--mobile .nav__item {
   font-size: 18px;
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+}
+.header__row--mobile .nav__item a {
+  display: block;
+  width: 100%;
+}
+.header__row--mobile .nav__item--accent {
+  width: auto;
 }
 .header__row--mobile .header__logo,
 .header__row--mobile .header__nav-btn {
@@ -320,7 +330,7 @@ a:hover {
   display: block;
   padding: 24px 0 0 0;
   max-width: 315px;
-  margin: 54px 0 0 0;
+  margin: 20px 0 0 0;
   position: relative;
 }
 .header__row--mobile .header__address--mob-nav::before {
