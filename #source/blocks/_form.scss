@@ -1,12 +1,28 @@
 .form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
         "form-name form-tel"
         "form-textarea form-textarea"
         "form-btn form-text";
     gap: 30px;
     align-items: center;
+
+    @include mediaBigTablet {
+        grid-template-areas: 
+            "form-name form-name form-img form-img"
+            "form-tel form-tel form-img form-img"
+            "form-textarea form-textarea form-textarea form-textarea"
+            "form-btn form-text form-text form-text";
+    }
+
+    @include mediaTablet {
+        grid-template-areas: 
+            "form-name"
+            "form-tel"
+            "form-textarea"
+            "form-btn"
+            "form-text";
+    }
 }
 
 .form__input {
@@ -38,6 +54,10 @@
     &::placeholder {
         font-size: 20px;
         color: $cta-input;
+
+        @include mediaBigTablet {
+            font-size: 16px;
+        }
     }
 }
 
@@ -62,6 +82,10 @@
         $yellow-accent 0.032%, 
         $yellow-muted 99.95%
         );
+
+    @include mediaBigTablet {
+        font-size: 16px;
+    }
 }
 
 .form__text {

@@ -1,6 +1,8 @@
 .consultation {
     padding: 30px 0;
 
+    overflow-x: hidden;
+
     background: $consultation-bg;
 }
 
@@ -14,6 +16,10 @@
     flex: 65% 1 0;
 
     padding: 0 21px 0 0;
+
+    @include mediaBigTablet {
+        padding: 0;
+    }
 }
 
 .consultation__title {
@@ -26,4 +32,28 @@
     padding: 0 0 0 21px;
 
     margin: 0 -148px 0 0;
+
+    @include mediaBigTablet {
+        display: none;
+    }
+
+    &--mob {
+        display: none;
+
+        grid-area: form-img;
+        justify-self: end;
+        
+        img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        @include mediaBigTablet {
+            display: block;
+        }
+
+        @include mediaTablet {
+            display: none;
+        }
+    }
 }

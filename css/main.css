@@ -159,8 +159,8 @@ a:hover {
 }
 @media screen and (max-width: 730px) {
   .title-2 {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
@@ -1600,6 +1600,7 @@ a:hover {
 
 .consultation {
   padding: 30px 0;
+  overflow-x: hidden;
   background: #262626;
 }
 
@@ -1618,6 +1619,11 @@ a:hover {
           flex: 65% 1 0;
   padding: 0 21px 0 0;
 }
+@media screen and (max-width: 1137px) {
+  .consultation__wrapper {
+    padding: 0;
+  }
+}
 
 .consultation__title {
   color: #FFF;
@@ -1628,15 +1634,49 @@ a:hover {
   padding: 0 0 0 21px;
   margin: 0 -148px 0 0;
 }
+@media screen and (max-width: 1137px) {
+  .consultation__img {
+    display: none;
+  }
+}
+.consultation__img--mob {
+  display: none;
+  grid-area: form-img;
+  justify-self: end;
+}
+.consultation__img--mob img {
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1137px) {
+  .consultation__img--mob {
+    display: block;
+  }
+}
+@media screen and (max-width: 730px) {
+  .consultation__img--mob {
+    display: none;
+  }
+}
 
 .form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "form-name form-tel" "form-textarea form-textarea" "form-btn form-text";
   gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 1137px) {
+  .form {
+    grid-template-areas: "form-name form-name form-img form-img" "form-tel form-tel form-img form-img" "form-textarea form-textarea form-textarea form-textarea" "form-btn form-text form-text form-text";
+  }
+}
+@media screen and (max-width: 730px) {
+  .form {
+    grid-template-areas: "form-name" "form-tel" "form-textarea" "form-btn" "form-text";
+  }
 }
 
 .form__input {
@@ -1699,6 +1739,24 @@ a:hover {
   font-size: 20px;
   color: #B0B0B0;
 }
+@media screen and (max-width: 1137px) {
+  .form__input::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .form__input::-moz-placeholder, .form__textarea::-moz-placeholder {
+    font-size: 16px;
+  }
+  .form__input:-ms-input-placeholder, .form__textarea:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .form__input::-ms-input-placeholder, .form__textarea::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .form__input::placeholder,
+  .form__textarea::placeholder {
+    font-size: 16px;
+  }
+}
 
 .form__textarea {
   grid-area: form-textarea;
@@ -1714,6 +1772,11 @@ a:hover {
   -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
           box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
   background: linear-gradient(268.28deg, #FBD846 0.032%, #FFE888 99.95%);
+}
+@media screen and (max-width: 1137px) {
+  .form__btn {
+    font-size: 16px;
+  }
 }
 
 .form__text {
