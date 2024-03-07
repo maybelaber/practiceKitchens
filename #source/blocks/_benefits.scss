@@ -18,6 +18,10 @@
 
     background: $white;
     margin: 0 0 42px 0;
+
+    @include mediaTablet {
+        margin: 0 0 20px 0;
+    }
 }
 
 .benefits__title {
