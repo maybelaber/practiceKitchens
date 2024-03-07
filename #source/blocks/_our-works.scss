@@ -1,11 +1,19 @@
 .our-works {
-    padding: 35px 0 42px;
+    padding: 35px 15px 42px;
 
     background: $yellow-accent;
+
+    @include mediaTablet {
+        padding: 40px 15px;
+    }
 }
 
 .our-works__title {
     margin: 0 0 56px 0;
+
+    @include mediaTablet {
+        margin: 0 0 20px 0;
+    }
 }
 
 .our-works__galery {
