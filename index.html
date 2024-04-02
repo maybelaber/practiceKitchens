@@ -52,13 +52,42 @@
                                     <a href="tel:73466681598">+7 (3466) 68-15-98</a>
                                 </li>
                                 <li class="nav__item nav__item--accent">
-                                    <a href="tel:73466681598">Заказать звонок</a>
+                                    <button class="nav__call">Заказать звонок</button>
                                 </li>
                                 <li class="header__address header__address--mob-nav">
                                     г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик № 20а
                                 </li>
                             </ul>
                         </nav>
+                    </div>
+
+                    <div class="popup-call">
+                        <div class="popup-call__inner">
+                            <button class="popup-call__close">
+                                <img src="./img/icons/cross.svg" alt="Close">
+                            </button>
+
+                            <h3 class="popup-call__title">Заказать звонок</h3>
+
+                            <div class="popup-call__text">
+                                <img src="./img/icons/tel-green.svg" alt="icon" class="popup-call__icon">
+                                Вы можете задать любой интересующий Вас вопрос, уточнить цены, вызвать замерщика,
+                                проконсультироваться о продукции.
+                            </div>
+
+                            <form class="popup-call__form">
+                                <input type="text" placeholder="Имя" class="popup-call__input">
+                                <input type="tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " class="popup-call__input">
+
+                                <div class="popup-call__btn-wrapper">
+                                    <button class="popup-call__btn btn">Позвоните мне</button>
+                                    <p class="popup-call__policy">
+                                        Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями
+                                        Политики конфиденциальности
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
                     </div>
 
                     <div class="header__mob">
@@ -88,41 +117,41 @@
                             </p>
 
                             <ul class="price__benefits">
-                                <div class="price__item">
+                                <li class="price__item">
                                     <div class="price__item-img">
-                                        <img src="./img/icons/money.svg" alt="Money">
+                                        <img src="./img/icons/money.svg" alt="money">
                                     </div>
                                     <p class="price__item-text">Рассрочка без
                                         <br>переплаты!
                                     </p>
-                                </div>
-                                <div class="price__item">
+                                </li>
+                                <li class="price__item">
                                     <div class="price__item-img">
-                                        <img src="./img/icons/design.svg" alt="Money">
+                                        <img src="./img/icons/design.svg" alt="design">
                                     </div>
                                     <p class="price__item-text">Бесплатный замер
                                         <br>и дизайн проект
                                     </p>
-                                </div>
-                                <div class="price__item">
+                                </li>
+                                <li class="price__item">
                                     <div class="price__item-img">
-                                        <img src="./img/icons/facade.svg" alt="Money">
+                                        <img src="./img/icons/facade.svg" alt="facade">
                                     </div>
                                     <p class="price__item-text">Более 500 цветов <br>фасадов</p>
-                                </div>
-                                <div class="price__item">
+                                </li>
+                                <li class="price__item">
                                     <div class="price__item-img">
-                                        <img src="./img/icons/time.svg" alt="Money">
+                                        <img src="./img/icons/time.svg" alt="time">
                                     </div>
                                     <p class="price__item-text">Соблюдение сроков изготовления
                                         <span class="regular-text"><br>Если не выполним в срок – мы <br>заплатим Вам
                                             неустойку</span>
                                     </p>
-                                </div>
+                                </li>
                             </ul>
 
                             <div class="price__wrapper">
-                                <button class="price__btn">Рассчитать стоимость</button>
+                                <button class="price__btn btn">Рассчитать стоимость</button>
                                 <div class="price__gift">
                                     <div class="price__gift-img">
                                         <img src="./img/icons/gift.svg" alt="Gift">
@@ -152,7 +181,7 @@
                     </div>
 
                     <div class="models__cards">
-                        <a href="#!" class="card">
+                        <div class="card">
                             <div class="card__img">
                                 <img src="./img/cards/01.jpg" alt="">
                             </div>
@@ -167,9 +196,9 @@
 
                                 <button class="card__btn"></button>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="#!" class="card">
+                        <div class="card">
                             <div class="card__img">
                                 <img src="./img/cards/02.jpg" alt="">
                             </div>
@@ -182,9 +211,9 @@
 
                                 <button class="card__btn"></button>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="#!" class="card">
+                        <div class="card">
                             <div class="card__img">
                                 <img src="./img/cards/03.jpg" alt="">
                             </div>
@@ -197,9 +226,9 @@
 
                                 <button class="card__btn"></button>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="#!" class="card">
+                        <div class="card">
                             <div class="card__img">
                                 <img src="./img/cards/04.jpg" alt="">
                             </div>
@@ -212,9 +241,9 @@
 
                                 <button class="card__btn"></button>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="#!" class="card">
+                        <div class="card">
                             <div class="card__img">
                                 <img src="./img/cards/05.jpg" alt="">
                             </div>
@@ -227,9 +256,9 @@
 
                                 <button class="card__btn"></button>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="#!" class="card">
+                        <div class="card">
                             <div class="card__img">
                                 <img src="./img/cards/06.jpg" alt="">
                             </div>
@@ -242,10 +271,105 @@
 
                                 <button class="card__btn"></button>
                             </div>
-                        </a>
+                        </div>
                     </div>
 
-                    <button class="models__btn">Смотреть все товары</button>
+                    <div class="popup-models">
+                        <div class="popup-models__inner">
+                            <button class="popup-models__close">
+                                <img src="./img/icons/cross.svg" alt="Close">
+                            </button>
+                            <div class="popup-models__wrapper">
+                                <div class="popup-models__main-img">
+                                    <img src="./img/models/popup/01-1.png" alt=""
+                                        class="popup-models__img popup-models__img_1">
+                                </div>
+                                <div class="popup-models__images">
+                                    <img src="./img/models/popup/01-1.png" alt=""
+                                        class="popup-models__img popup-models__img_1">
+                                    <img src="./img/models/popup/01-2.jpg" alt=""
+                                        class="popup-models__img popup-models__img_2">
+                                    <img src="./img/models/popup/01-3.jpg" alt=""
+                                        class="popup-models__img popup-models__img_3">
+                                </div>
+                            </div>
+                            <div class="popup-models__desc">
+                                <h3 class="popup-models__title">Кухонный гарнитур “Шимо”.
+                                    Длина 1.2 метра.</h3>
+                                <p class="popup-models__desc-text">Описание</p>
+                                <div class="popup-models__text">
+                                    <p>
+                                        <span class="medium-text">Материал корпуса</span>: ЛДСП,<br>
+                                        <span class="medium-text">Цвет корпуса:</span> БЕЛЫЙ.<br>
+                                        <span class="medium-text">Материал фасадов:</span> ЛДСП,<br>
+                                        <span class="medium-text">цвет фасадов:</span> Шимо тмный/шимо светлый.<br>
+                                        <span class="medium-text">Длина кухонного гарнитура</span> 1.2 метра.<br>
+                                    </p>
+                                    <p>
+                                        <span class="medium-text">Кухня включает в себя:</span> <br>
+                                        — Стол на 600 мм, со столешницей - 2 шт. <br>
+                                        — Шкаф верхний на 600 мм (с полкой) 2 шт.
+                                    </p>
+                                    <p>
+                                        Ножки-опоры регулируемые, пластиковые, цвет –
+                                        серебро. Ручки – пластик. Мойка в комплектацию не
+                                        входит! Товар доставляется в упаковке, схема сборки
+                                        прилагается!
+                                    </p>
+                                </div>
+                                <div class="popup-models__price-wrapper">
+                                    <div class="popup-models__price">
+                                        <s class="popup-models__old-price">75 620₽</s>
+                                        <p class="popup-models__new-price">69 620₽</p>
+                                    </div>
+                                    <button class="popup-models__btn btn">Отставить заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup-application">
+                        <div class="popup-application__inner">
+                            <button class="popup-application__close">
+                                <img src="./img/icons/cross.svg" alt="Close">
+                            </button>
+
+                            <h3 class="popup-application__title">Оставить заявку</h3>
+
+                            <div class="popup-application__product">
+                                <img src="./img/models/popup/01-1.png" alt="" class="popup-application__product-img">
+
+                                <div class="popup-application__wrapper">
+                                    <div class="popup-application__product-title">Кухонный гарнитур “Шимо”. Длина 1.2
+                                        метра.
+                                    </div>
+
+                                    <div class="popup-application__price">
+                                        <s class="popup-application__old-price">75 620₽</s>
+                                        <p class="popup-application__new-price">69 620₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="popup-application__form">
+                                <input type="text" placeholder="Имя" class="popup-application__input">
+                                <input type="tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ "
+                                    class="popup-application__input">
+
+                                <div class="popup-application__btn-wrapper">
+                                    <button class="popup-application__btn">Оставить заявку</button>
+                                    <p class="popup-application__policy">
+                                        Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики
+                                        конфиденциальности
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="models__container-btn">
+                        <button class="models__btn btn--green">Смотреть все товары</button>
+                    </div>
                 </div>
             </section>
 
@@ -259,54 +383,249 @@
                         Мы готовы вам в этом помочь.</p>
                     <div class="kitchen-styles__gallery">
                         <div class="tabs">
-                            <div class="tabs-triggers">
-                                <a href="#tab-1" class="tabs-triggers__item tabs-triggers__item--active">Эконом</a>
-                                <a href="#tab-2" class="tabs-triggers__item">Маленькие</a>
-                                <a href="#tab-3" class="tabs-triggers__item">Классика</a>
-                                <a href="#tab-4" class="tabs-triggers__item">Скандинавский</a>
-                                <a href="#tab-5" class="tabs-triggers__item">Минимализм</a>
+                            <div class="tabs-triggers tabs__nav">
+                                <button data-tab="#tab-1" class="tabs-triggers__item tabs__btn">Эконом</button>
+                                <button data-tab="#tab-2" class="tabs-triggers__item tabs__btn">Маленькие</button>
+                                <button data-tab="#tab-3" class="tabs-triggers__item tabs__btn">Классика</button>
+                                <button data-tab="#tab-4"
+                                    class="tabs-triggers__item tabs__btn btn">Скандинавский</button>
+                                <button data-tab="#tab-5" class="tabs-triggers__item tabs__btn">Минимализм</button>
                             </div>
 
+                            <div class="select-container">
+                                <select class="tabs-triggers--mobile tabs__select">
+                                    <option data-tab="#tab-1" class="tabs-triggers__item--mobile tabs__btn">Эконом
+                                    </option>
+                                    <option data-tab="#tab-2" class="tabs-triggers__item--mobile tabs__btn">Маленькие
+                                    </option>
+                                    <option data-tab="#tab-3" class="tabs-triggers__item--mobile tabs__btn">Классика
+                                    </option>
+                                    <option data-tab="#tab-4" class="tabs-triggers__item--mobile tabs__btn">
+                                        Скандинавский
+                                    </option>
+                                    <option data-tab="#tab-5" class="tabs-triggers__item--mobile tabs__btn ">Минимализм
+                                    </option>
+                                </select>
+
+                                <div class="select-icon">
+                                    <img src="./img/icons/select.svg" alt="select">
+                                </div>
+                            </div>
+
+
+
                             <div class="tabs-content">
-                                <div id="tab-1" class="tabs-content__item">
+                                <div id="tab-1" class="tabs-content__item tabs__item">
                                     <a href="#!" class="tabs-content__card">
                                         <img src="./img/tabs/1/01.jpg" alt="Kitchen" class="tabs-content__img">
-                                        <button class="tab-conntent__btn">
+                                        <button class="tab-content__btn">
                                             <img src="./img/icons/search.svg" alt="Search">
                                         </button>
                                     </a>
 
                                     <a href="#!" class="tabs-content__card">
                                         <img src="./img/tabs/1/02.jpg" alt="Kitchen" class="tabs-content__img">
-                                        <button class="tab-conntent__btn">
+                                        <button class="tab-content__btn">
                                             <img src="./img/icons/search.svg" alt="Search">
                                         </button>
                                     </a>
 
                                     <a href="#!" class="tabs-content__card">
                                         <img src="./img/tabs/1/03.jpg" alt="Kitchen" class="tabs-content__img">
-                                        <button class="tab-conntent__btn">
+                                        <button class="tab-content__btn">
                                             <img src="./img/icons/search.svg" alt="Search">
                                         </button>
                                     </a>
 
                                     <a href="#!" class="tabs-content__card">
                                         <img src="./img/tabs/1/04.jpg" alt="Kitchen" class="tabs-content__img">
-                                        <button class="tab-conntent__btn">
+                                        <button class="tab-content__btn">
                                             <img src="./img/icons/search.svg" alt="Search">
                                         </button>
                                     </a>
 
                                     <a href="#!" class="tabs-content__card">
                                         <img src="./img/tabs/1/05.jpg" alt="Kitchen" class="tabs-content__img">
-                                        <button class="tab-conntent__btn">
+                                        <button class="tab-content__btn">
                                             <img src="./img/icons/search.svg" alt="Search">
                                         </button>
                                     </a>
 
                                     <a href="#!" class="tabs-content__card">
                                         <img src="./img/tabs/1/06.jpg" alt="Kitchen" class="tabs-content__img">
-                                        <button class="tab-conntent__btn">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+                                </div>
+                                <div id="tab-2" class="tabs-content__item tabs__item">
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/02.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/01.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/02.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/06.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/04.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/02.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+                                </div>
+                                <div id="tab-3" class="tabs-content__item tabs__item">
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/03.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/06.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/01.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/04.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/05.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/06.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+                                </div>
+                                <div id="tab-4" class="tabs-content__item tabs__item">
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/04.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/01.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/06.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/06.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/06.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/03.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+                                </div>
+                                <div id="tab-5" class="tabs-content__item tabs__item">
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/05.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/03.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/01.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/04.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/02.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
+                                            <img src="./img/icons/search.svg" alt="Search">
+                                        </button>
+                                    </a>
+
+                                    <a href="#!" class="tabs-content__card">
+                                        <img src="./img/tabs/1/06.jpg" alt="Kitchen" class="tabs-content__img">
+                                        <button class="tab-content__btn">
                                             <img src="./img/icons/search.svg" alt="Search">
                                         </button>
                                     </a>
@@ -324,7 +643,8 @@
                                 <img src="./img/kitchen-styles/sketch.png" alt="Kitchen Sketch">
                             </div>
 
-                            <p class="kitchen-styles__cta-text">Отправьте его нам и мы посчитаем стоимость с учетом Ваших пожеланий!</p>
+                            <p class="kitchen-styles__cta-text">Отправьте его нам и мы посчитаем стоимость с учетом
+                                Ваших пожеланий!</p>
 
                             <div class="kitchen-styles__form-wrapper">
                                 <form action="" class="kitchen-styles__form">
@@ -334,11 +654,15 @@
                                     <input type="file" class="kitchen-styles__file" id="cta-file">
                                     <label for="cta-file" class="kitchen-styles__file-label">
                                         <img src="./img/icons/attach.svg" alt="" class="kitchen-styles__file-icon">
-                                        <p class="kitchen-styels__file-text">Вы можете приложить <br>эскиз или фото</p>
+                                        <p class="kitchen-styels__file-text">Вы можете приложить <br>эскиз или фото
+                                        </p>
                                     </label>
                                     <div class="kitchen-styles__btn-wrapper">
-                                        <button class="kitchen-styles__btn">Рассчитать стоимость</button>
-                                        <p class="kitchen-styles__btn-text">Нажимая кнопку “Рассчитать стоимость”, вы
+                                        <div class="kitchen-styles__btn-container">
+                                            <button class="kitchen-styles__btn btn">Рассчитать стоимость</button>
+                                        </div>
+                                        <p class="kitchen-styles__btn-text">Нажимая кнопку “Рассчитать стоимость”,
+                                            вы
                                             соглашаетесь с условиями Политики конфиденциальности</p>
                                     </div>
                                 </form>
@@ -384,7 +708,9 @@
                             <p class="benefits__poll-text"><span class="green-text">+</span> гарантированый подарок при
                                 заказе кухни!</p>
 
-                            <button class="benefits__poll-btn">Узнать стоимость</button>
+                            <div class="benefits__btn-container">
+                                <button class="benefits__poll-btn btn">Узнать стоимость</button>
+                            </div>
 
                         </div>
                     </div>
@@ -447,7 +773,7 @@
 
                     <div class="materials__grid">
                         <a href="#!" class="materials__card">
-                            <div href="#!" class="materials__card-wrapper">
+                            <div class="materials__card-wrapper">
                                 <img src="./img/materials/card-01.png" alt="" class="materials__card-img">
                                 <p class="materials__card-title">ЛДСП</p>
                                 <div class="materials__card-text">
@@ -595,7 +921,7 @@
                     <div class="our-works__scrollbar">
                         <div class="our-works__scrollbar-track">
                             <div class="our-works__scrollbar-thumb"></div>
-                        </div>        
+                        </div>
                     </div>
                 </div>
 
@@ -620,7 +946,9 @@
                                 <textarea placeholder="Кратко опишите Ваш вопрос" name="form-textarea"
                                     id="form-textarea" cols="30" rows="10" class="form__textarea"></textarea>
 
-                                <button class="form__btn">Получить консультацию</button>
+                                <div class="form__btn-container">
+                                    <button class="form__btn btn">Получить консультацию</button>
+                                </div>
 
                                 <p class="form__text">Нажимая кнопку "Получить консультацию" вы даете согласие на
                                     обработку персональных данных в соответствии с политикой конфиденциальности</p>
@@ -644,9 +972,9 @@
                         </div>
 
                         <p class="footer__address">
-                            г. Нижневартовск, 
-                            ул. Индустриальная, д.7 стр. 1 
-                            ТЦ “ВДНХ”, 2 этаж, 
+                            г. Нижневартовск,
+                            ул. Индустриальная, д.7 стр. 1
+                            ТЦ “ВДНХ”, 2 этаж,
                             бутик № 20а
                         </p>
                     </div>

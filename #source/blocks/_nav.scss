@@ -9,7 +9,7 @@
     font-size: 14px;
 }
 
-.nav__item--accent a {
+.nav__call {
     padding: 15px 26px;
     display: inline-block;
 
@@ -22,7 +22,7 @@
     transition: background-color 0.2s ease-in;
 
     box-shadow: 2px 2px 4px 0px rgba(255, 216, 111, 0.4);
-    
+
     &:hover {
         background-color: $yellow-accent;
         color: $black;

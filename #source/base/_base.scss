@@ -38,24 +38,29 @@ a {
 
 .visually-hidden {
     /* Contain text within 1px box */
-	height: 1px;
-	overflow: hidden;
-	width: 1px;
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
 
-	/* Keep the layout */
-	position: absolute;
+    /* Keep the layout */
+    position: absolute;
 
-	/* Remove any visible trace (e.g. background color) */
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%); /* browsers in the future */
+    /* Remove any visible trace (e.g. background color) */
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    /* browsers in the future */
 
-	/* Prevent the screen reader to skip spaces between words */
-	white-space: nowrap;
+    /* Prevent the screen reader to skip spaces between words */
+    white-space: nowrap;
 }
 
 .no-scroll {
     overflow-y: hidden;
+}
+
+.position-fixed {
     position: fixed;
 }
 
@@ -76,6 +81,10 @@ a {
     font-weight: 400;
 }
 
+.medium-text {
+    font-weight: 500;
+}
+
 .yellow-text {
     color: $yellow-accent;
 }
@@ -86,4 +95,20 @@ a {
 
 .white-text {
     color: $white;
+}
+
+.btn {
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background-color: $yellow-dark;
+    }
+
+    &--green {
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background-color: $green-dark;
+        }
+    }
 }

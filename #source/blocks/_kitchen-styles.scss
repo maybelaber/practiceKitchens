@@ -43,6 +43,9 @@
     align-items: center;
     column-gap: 13px;
 
+    position: relative;
+    z-index: 1;
+
     @include mediaTablet {
         padding: 20px 10px;
     }
@@ -133,7 +136,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 21px;
     row-gap: 28px;
-    
+
     @include mediaBigTablet {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -184,6 +187,27 @@
     align-items: center;
 }
 
+.kitchen-styles__btn-container {
+    position: relative;
+
+    margin: 0 0 10px 0;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(268.28deg, $yellow-accent 0.036%, $yellow-muted 99.944%);
+        border-radius: 30px;
+
+        box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+    }
+}
+
 .kitchen-styles__btn {
     padding: 20px 56px;
     max-width: 360px;
@@ -193,12 +217,9 @@
 
     border-radius: 30px;
     box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
-    background: linear-gradient(268.28deg, 
-        $yellow-accent 0.032%, 
-        $yellow-muted 99.95%
-    );
 
-    margin: 0 0 10px 0;
+    position: relative;
+    z-index: 2;
 
     @include mediaBigTablet {
         width: 100%;

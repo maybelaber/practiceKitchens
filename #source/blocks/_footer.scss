@@ -89,9 +89,9 @@
         }
     }
 
-    &--email, 
-    &--tel, 
-    &--vk, 
+    &--email,
+    &--tel,
+    &--vk,
     &--ok {
         padding: 0 0 0 30px;
         position: relative;
@@ -110,7 +110,7 @@
 
     &--email::before {
         background: url('./../img/icons/email.svg') no-repeat;
-        
+
         width: 22px;
         height: 16px;
     }
@@ -152,6 +152,10 @@
 
 .footer__list-item a {
     color: $white;
+
+    &:hover {
+        color: $gray;
+    }
 
     @include mediaTablet {
         font-size: 14px;

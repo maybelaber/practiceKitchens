@@ -1,18 +1,59 @@
-// .tabs {
-// }
-
 .tabs-triggers {
     display: flex;
-    //justify-content: space-between;
-    flex-wrap: wrap; // temporary
-    justify-content: center; //
-    column-gap: 10px; //
-    row-gap: 10px; //
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
 
     margin: 0 0 45px 0;
 
     @include mediaTablet {
-        margin: 0 0 20px 0;
+        display: none;
+    }
+
+    &--mobile {
+        display: none;
+        width: 100%;
+        display: flex;
+
+        border: none;
+        outline: none;
+        appearance: none;
+        box-shadow: none;
+
+        border-radius: 25px;
+        padding: 15px 10px;
+        background-color: $yellow-accent;
+        color: $dark;
+        font-weight: 700;
+    }
+}
+
+.select-container {
+    position: relative;
+
+    display: none;
+
+    margin: 0 0 20px 0;
+
+    @include mediaTablet {
+        display: block;
+    }
+}
+
+.select-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+
+    width: 14px;
+    height: 8px;
+}
+
+.tabs__select {
+    &:focus {
+        box-shadow: 0px 0px 0px 1px $yellow-dark;
     }
 }
 
@@ -23,18 +64,15 @@
     color: $tabs-triggers-text;
 
     border-radius: 30px;
-    background: $light-gray;
+    background-color: $light-gray;
 
-    &--active {
-        background: $yellow-accent;
-        
-        color: $dark;
-        font-weight: 600;
+    &--mobile {
+        font-weight: 700;
+        outline: none;
+        border: none;
+        box-shadow: none;
     }
 }
-
-// .tabs-content {   
-// }
 
 .tabs-content__item {
     display: grid;
@@ -52,13 +90,40 @@
     object-fit: cover;
 }
 
-.tab-conntent__btn {
+.tab-content__btn {
     padding: 14.5px;
 
     position: absolute;
     bottom: 13px;
     right: 9px;
 
-    background: rgba(251, 216, 70, 0.8);
+    background-color: rgba(251, 216, 70, 0.8);
     border-radius: 50%;
+}
+
+.tabs__item {
+    display: none;
+}
+
+.tabs__item.active {
+    display: grid;
+}
+
+.tabs__btn {
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background-color: $gray-dark;
+    }
+}
+
+.tabs__btn.active {
+    background-color: $yellow-accent;
+
+    color: $dark;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $yellow-dark;
+    }
 }
