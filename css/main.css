@@ -1742,6 +1742,7 @@ a:hover {
 }
 
 .kitchen-styles__btn-container {
+  width: 100%;
   position: relative;
   margin: 0 0 10px 0;
 }
@@ -1759,6 +1760,7 @@ a:hover {
 }
 
 .kitchen-styles__btn {
+  width: 100%;
   padding: 20px 56px;
   max-width: 360px;
   font-size: 20px;
@@ -2543,6 +2545,7 @@ a:hover {
 }
 
 .consultation__title {
+  text-align: left;
   color: #FFF;
   margin: 0 0 30px 0;
 }
@@ -2679,6 +2682,7 @@ a:hover {
 .form__textarea {
   grid-area: form-textarea;
   height: 113px;
+  resize: none;
 }
 
 .form__btn-container {
@@ -2830,11 +2834,11 @@ a:hover {
     margin: 0 0 20px 0;
   }
 }
-.footer__list-item--email, .footer__list-item--tel, .footer__list-item--vk, .footer__list-item--ok {
+.footer__list-item--email, .footer__list-item--tel, .footer__list-item--fb, .footer__list-item--ig {
   padding: 0 0 0 30px;
   position: relative;
 }
-.footer__list-item--email::before, .footer__list-item--tel::before, .footer__list-item--vk::before, .footer__list-item--ok::before {
+.footer__list-item--email::before, .footer__list-item--tel::before, .footer__list-item--fb::before, .footer__list-item--ig::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -2871,15 +2875,15 @@ a:hover {
   -webkit-transform: unset;
           transform: unset;
 }
-.footer__list-item--vk::before {
-  background: url("./../img/icons/vk.svg") no-repeat;
-  width: 21px;
-  height: 12px;
+.footer__list-item--fb::before {
+  background: url("./../img/icons/facebook.svg") no-repeat;
+  width: 26px;
+  height: 26px;
 }
-.footer__list-item--ok::before {
-  background: url("./../img/icons/ok.svg") no-repeat;
-  width: 13px;
-  height: 23px;
+.footer__list-item--ig::before {
+  background: url("./../img/icons/instagram.svg") no-repeat;
+  width: 26px;
+  height: 26px;
 }
 
 .footer__list-item a {
